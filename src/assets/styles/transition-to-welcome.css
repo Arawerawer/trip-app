@@ -1,0 +1,18 @@
+/* 從 Trip 返回 Welcome 頁面的過場動畫 */
+.back-leave-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: slide-out-bck-center 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+}
+
+@keyframes slide-out-bck-center {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

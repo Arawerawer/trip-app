@@ -1,0 +1,23 @@
+/* 導向 Trip 頁面的過場動畫 */
+.page-leave-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: slide-out-fwd-center 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+}
+
+@keyframes slide-out-fwd-center {
+  0% {
+    -webkit-transform: translateZ(1);
+    transform: translateZ(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+}
+
