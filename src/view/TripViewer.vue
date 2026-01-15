@@ -9,7 +9,7 @@ const tripInputStore = useTripInputStore();
 </script>
 
 <template>
-  <div class="w-full min-h-dvh bg-linear-to-b from-blue-50 to-white">
+  <div class="w-full min-h-screen bg-linear-to-b from-blue-50 to-white">
     <Navbar />
     <div
       class="max-w-4xl px-4 mx-auto pt-28 pb-4 flex flex-col items-center gap-4"

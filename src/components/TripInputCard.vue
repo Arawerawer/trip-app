@@ -42,15 +42,6 @@ const handleSubmit = () => {
   tripTime.value = "";
   tripLocation.value = "";
 };
-
-const scrollToInput = (event: FocusEvent) => {
-  setTimeout(() => {
-    (event.target as HTMLElement).scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
-  }, 300);
-};
 </script>
 
 <template>
@@ -61,7 +52,6 @@ const scrollToInput = (event: FocusEvent) => {
       v-model="tripName"
       type="text"
       placeholder="行程名稱"
-      @focus="scrollToInput"
       class="w-full px-3 py-2 bg-zinc-100 rounded-lg outline-1 -outline-offset-1 outline-black/0 text-sm font-normal font-['Inter'] placeholder:text-gray-500 text-black"
     />
 
@@ -71,7 +61,6 @@ const scrollToInput = (event: FocusEvent) => {
       v-model="tripLocation"
       type="text"
       placeholder="地點 (選填)"
-      @focus="scrollToInput"
       class="w-full px-3 py-2 bg-zinc-100 rounded-lg outline-1 -outline-offset-1 outline-black/0 placeholder:text-gray-500 text-sm text-black font-normal font-['Inter']"
     />
 
