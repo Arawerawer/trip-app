@@ -19,8 +19,8 @@ export default defineConfig({
         theme_color: "#2F7AF0",
         icons: [
           {
-            src: "/plane-192.png",
-            sizes: "192x192",
+            src: "/plane-144.png",
+            sizes: "144x144",
             type: "image/png",
           },
           {
