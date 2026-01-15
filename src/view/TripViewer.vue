@@ -37,6 +37,7 @@ const tripInputStore = useTripInputStore();
       <AddDayButton
         :day-number="tripInputStore.nextSequentialDay"
         @click="tripInputStore.addNextSequentialDay()"
+        class="mb-6"
       />
     </div>
   </div>

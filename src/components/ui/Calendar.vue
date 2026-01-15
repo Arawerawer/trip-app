@@ -31,17 +31,20 @@ const props = withDefaults(defineProps<CalendarProps>(), {
 :deep(.dp__theme_light) {
   --dp-font-size: 1rem;
   --dp-border-radius: 20px;
-  --dp-primary-color: black;
+  --dp-primary-color: rgb(18, 174, 226);
   --dp-hover-color: #f0f0f0;
-  .dp__today {
-    /* 設定背景顏色（實心） */
-    background-color: var(--dp-primary-color);
+}
 
-    /* 設定文字顏色（通常改為白色比較清晰） */
-    color: #ffffff;
+:deep(.dp__today) {
+  border: none;
+}
 
-    /* 如果你想讓它看起來更像一個實心圓，可以調整圓角 */
-    border-radius: 50%;
-  }
+:deep(.dp__active_date) {
+  border-radius: 50%;
+}
+
+:deep(.dp__cell_inner:hover) {
+  /*  自訂 border */
+  border-radius: 50%;
 }
 </style>

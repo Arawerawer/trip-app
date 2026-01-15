@@ -16,7 +16,7 @@ export default defineConfig({
         name: "旅遊App",
         short_name: "旅遊App",
         description: "輕鬆規劃你的旅遊行程",
-        theme_color: "#2563eb",
+        theme_color: "#2F7AF0",
         icons: [
           {
             src: "/plane-192.png",

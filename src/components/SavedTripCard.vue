@@ -91,7 +91,7 @@ const openGoogleMaps = () => {
       class="w-full flex justify-start items-center gap-2 relative"
     >
       <div
-        className="w-6 h-6 px-1.5 pt-1.5 bg-green-50 rounded-[10px] inline-flex flex-col justify-start items-start flex-shrink-0"
+        className="w-6 h-6 px-1.5 pt-1.5 bg-green-50 rounded-[10px] inline-flex flex-col justify-start items-start shrink-0"
       >
         <img :src="MapGreenIcon" alt="map" />
       </div>
