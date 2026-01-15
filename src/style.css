@@ -9,4 +9,9 @@
   body {
     touch-action: pan-x pan-y;
   }
+
+  /* 禁止雙擊放大 */
+  * {
+    touch-action: manipulation;
+  }
 }
