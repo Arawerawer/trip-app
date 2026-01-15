@@ -1,17 +1,1 @@
 @import "tailwindcss";
-
-/* 手機禁止縮放，電腦允許縮放 */
-@media (hover: none) and (pointer: coarse) {
-  html {
-    touch-action: pan-x pan-y;
-  }
-
-  body {
-    touch-action: pan-x pan-y;
-  }
-
-  /* 禁止雙擊放大 */
-  * {
-    touch-action: manipulation;
-  }
-}
